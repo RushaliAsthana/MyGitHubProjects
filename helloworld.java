@@ -5,6 +5,8 @@ class helloworld
     {
         Scanner sc=new Scanner(System.in);
         String name=sc.next();
-        System.out.println("Enter your name:"name);
+        int  name=sc.nextInt();
+        System.out.println("Enter your name:"+name);
+          System.out.println("Enter your age:"+age);
     }
 }
