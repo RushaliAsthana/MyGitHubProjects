@@ -4,8 +4,8 @@ class customList
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         ArrayList<Student>studentsList=new ArrayList<Student>();
-        System.out.println("Please enter your custom list!Enter 3 Student name,roll no and dept");
-        for(int i=0;i<3;i++)
+        System.out.println("Please enter your custom list!Enter 10 Student name,roll no and dept");
+        for(int i=0;i<10;i++)
         {
             String name=sc.next();
             String rno=sc.next(); 
