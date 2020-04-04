@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Epam Login</title>
+    <style>
+      #lin:hover
+      {
+            text-decoration: none;
+      }
+      #lock
+      {
+        margin-left: 430px;
+        position: absolute;
+        top:80px;
+        color: rgb(235, 227, 227);
+      }
+      #mail
+      {
+        margin-left: 430px;
+        position: absolute;
+        top:20px;
+        color: rgb(235, 227, 227);
+      }
+    .modal-header,#mbtn
+    {
+      text-align: center;
+      background-color:#66ccff;
+      color:white
+    }
+    #mbtn:hover
+    {
+      text-align: center;
+      background-color:#59bbec;
+      color:white
+    }
+    .modal-header h5
+    {
+      margin-left: 30%;
+      margin-top: 20px;
+      color: white;
+    }
+        #bgcolor{
+         background-color: black;
+
+        }
+        #txtcolor
+        {
+            color: aqua;
+            margin: 10px;
+        }
+        .nav-link
+        {
+            margin-right: 40px;
+            color: aqua;
+        }
+        .container-fluid
+        {
+            /* margin-top: 100px; */
+            background-image: url("https://www.aithority.com/wp-content/uploads/2018/10/epam.jpg");
+            height:650px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #Loginform
+        {color: black;
+            position: relative;
+            left: 50%; 
+            top:50%;  
+            border-radius:0px ;
+            width: 200px;
+            background-color: aliceblue;
+            border: 2px solid black;
+        }
+        #Loginform:hover{
+            background-color: black;
+            color: aqua;
+        }
+        #fb
+        {
+          color: white;
+         
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm  " id="bgcolor">
+    
+        <a class="navbar-brand" href="#">
+          <img src="https://g.foolcdn.com/art/companylogos/square/epam.png" alt="logo" style="width:50px;">
+        </a>
+        
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container-fluid">
+          
+          <button type="button" class="btn btn-primary" id="Loginform" data-toggle="modal" data-target="#exampleModalCenter">
+            Click This To Sign Up
+          </button>
+          
+          
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <img style="height:70px;width: 90px;"src="epamlogo.jpg">
+                  <h5 class="modal-title justify-content-center" id="exampleModalLongTitle">Sign Up</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <span class="input-group-addon"><i id="mail" class="fa fa-envelope-square fa-2x"></i></span><input type="text" class="form-control" placeholder="mail@example.com"><br>
+                  <span class="input-group-addon"><i id="lock" class="fa fa-unlock fa-2x"></i></span> <input type="password" class="form-control" placeholder="password"><br>
+                 <button id="mbtn"class="btn btn-block">SIGN IN</button>
+                 <a href="#" id="lin">Forgot your password?</a><a id="lin" style="margin-left:240px;" href="#">Register</a>
+                 <br>
+                </div>
+                <div class="modal-footer">
+                  <br>
+                  <button type="button" id="fb" class="btn btn-block btn-primary fa fa-facebook"></button>
+                  <button type="button" id="fb" class="btn btn-block btn-danger fa fa-google"></button> <br>
+                  <button type="button" id="fb" class="btn btn-block btn-success"> <b>< EPAM LOGIN ></b></button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <footer class="fixed-bottom" id="bgcolor"><p class="text-center" id="txtcolor" >Copyright @2020</p></footer>
+</body>
+</html>
