@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <title>SignUp</title>
+ <script src="scrtipt.js"></script>
+</head>
+<body>
+ <div class="container text-center">
+  <h1 class="text-center underline theme-brown">SignUp</h1>
+  <form>
+   <span class="invalid" id="invalidemail"></span>
+  <input type="text" id="emailfield" placeholder="Enter your E-mail" class="form-control" onfocusin="resetfun1()" onfocusout="checkEmail()" required> <br/><br/>
+  <span class="invalid" id="invalidpwd"></span>
+  <input type="Password" id="pwd" placeholder="Enter your password" class="form-control" onfocusin="resetfun2()" onfocusout="lengthcheck()" required> <br><br>
+  <span class="invalid" id="invalidcpwd"></span>
+  <input type="Password" placeholder="Confirm your password" id="cpwd" class="form-control"  onfocusin="resetfun3()" onfocusout="checkPwd()" required> <br>
+  <span class="invalid" id="invalidage"></span><br>
+  <select id="gender">
+   <option>Male</option>
+   <option>Female</option>
+   <option>Other</option>
+  </select>
+  <input type="number" placeholder="Enter your age" id="age" onfocusin="resetfun4()" onfocusout="validateAge()" class="form-control" required>
+  <br><br>
+  <span class="invalid" id="invalidphno"></span>
+  <input type="number"  placeholder="Enter your phone number" id="phno" onfocusin="resetfun5()" onfocusout="checkLen()" oninput="phnoCheck()" class="form-control" required> <br><br>
+  <input type="submit" value="Submit" class="btn btn-theme" ><br><br>
+ </form>
+ <i class="fa fa-facebook"></i>
+ Connect With
+ <i class="fa fa-google" style="font-size:24px"></i><br><br>
+<a href="Login.html"> <button class="btn btn-brown"  type="button">Already a member? Login</button></a><br><br>
+ </div>
+</body>
+</html>

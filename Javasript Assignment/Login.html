@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <title>Login</title>
+ <link rel="stylesheet" href="./styles.css">
+ <script src="scrtipt.js"></script>
+</head>
+<body>
+ <div class="container text-center">
+  <h1 class="text-center underline theme-brown">Login</h1>
+  <form>
+   <span class="invalid" id="invalidemail"></span>
+  <input type="text" id="emailfield" placeholder="Enter your E-mail" class="form-control" onfocusin="resetfun1()" onfocusout="checkEmail()" required> <br/><br/>
+  <span class="invalid" id="invalidpwd"></span>
+  <input type="Password" placeholder="Enter your password"id="pwd" onfocusin="resetfun2()" onfocusout="lengthcheck()" class="form-control" required> <br><br>
+  <input type="submit" value="Submit" class="btn btn-theme"><br><br>
+ </form>
+ <a href="#" class="theme-brown link">Forgot Password</a><br><br>
+ <i class="fa fa-facebook"></i>
+ Connect With
+ <i class="fa fa-google" style="font-size:24px"></i><br><br><br>
+ <a href="SignUp.html"><button class="btn btn-brown" type="button">Not a Member? SignUp</button></a>
+ </div>
+</body>
+</html>
